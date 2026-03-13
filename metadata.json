@@ -1,0 +1,5 @@
+{
+  "name": "Halftone Sim",
+  "description": "A generative art tool that simulates moire, stipple, and halftone textures on 3D spheres using WebGL.",
+  "requestFramePermissions": []
+}
