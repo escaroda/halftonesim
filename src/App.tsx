@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Settings2, Download, Image as ImageIcon, Play, Pause, Palette, Maximize, Minimize, Activity, Link as LinkIcon, Check } from 'lucide-react';
+import { Settings2, Download, Image as ImageIcon, Play, Pause, Palette, Maximize, Minimize, Activity, Link as LinkIcon, Check, Github, Instagram } from 'lucide-react';
 
 // --- URL Sync Helpers ---
 const encodeParams = (p: any) => {
@@ -950,6 +950,28 @@ export default function App() {
             <Slider label="Sharpness 1" value={params.sharpness1} min={0} max={1} step={0.01} onChange={(v: number) => setParams({ ...params, sharpness1: v })} />
             <Slider label="Sharpness 2" value={params.sharpness2} min={0} max={1} step={0.01} onChange={(v: number) => setParams({ ...params, sharpness2: v })} />
           </section>
+
+          {/* Links */}
+          <div className="pt-4 border-t border-zinc-800 flex flex-col gap-3 text-sm text-zinc-400">
+            <a 
+              href="https://github.com/escaroda/halftonesim" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 hover:text-indigo-400 transition-colors"
+            >
+              <Github className="w-4 h-4" />
+              escaroda
+            </a>
+            <a 
+              href="https://www.instagram.com/callsomeoneyoulove/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 hover:text-pink-400 transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
+              callsomeoneyoulove
+            </a>
+          </div>
         </div>
       </div>
 
